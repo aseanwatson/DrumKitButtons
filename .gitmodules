@@ -1,0 +1,3 @@
+[submodule "models/pb86"]
+	path = models/pb86
+	url = https://github.com/ScharreSoft/PB86-footprints-and-3d-models
