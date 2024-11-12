@@ -3,3 +3,5 @@ fp-info-cache
 fp-lib-table
 sym-lib-table
 *.lck
+*.bak
+gerber_to_order/
