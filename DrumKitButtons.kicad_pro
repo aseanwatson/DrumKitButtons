@@ -590,6 +590,14 @@
     [
       "9053e4fd-2214-4e2c-a1c2-d5a9964413b7",
       "Root"
+    ],
+    [
+      "56600e35-72e7-45c1-8008-a2a2285948a1",
+      "Button Bank 0"
+    ],
+    [
+      "575be80e-352b-49ee-9f93-701667605cc7",
+      "Button Bank 1"
     ]
   ],
   "text_variables": {}
