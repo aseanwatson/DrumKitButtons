@@ -29,7 +29,7 @@ jobs:
 
       - name: Export BOM
         run: |
-          kicad-cli sch export -o bom.csv bom KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli sch export bom -o bom.csv KiCAD/DrumKitButtons.kicad_sch
 
       - name: Export Schematic PDF
         run: |
@@ -41,11 +41,11 @@ jobs:
 
       - name: Export PCB PDF
         run: |
-          kicad-cli pcb export pcb -o board.pdf -l "*" -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli pcb export pdf -o board.pdf -l "*" -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Export VRML 3D Board
         run: |
-          kicad-cli pcb export vrml -o board.vrml -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli pcb export vrml -o board.vrml -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
