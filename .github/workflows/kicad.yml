@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
             submodules: 'recursive'
             fetch-tags: 'true'
@@ -49,43 +49,43 @@ jobs:
         run: |
           kicad-cli pcb export vrml -o board.vrml -D "REV=$(git describe --always --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload ERC
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: ERC
           path: erc.txt
           retention-days: 15
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload BOM
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: BOM
           path: bom.csv
           retention-days: 15
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload Schematic PDF
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Schematic PDF
           path: schematic.pdf
           retention-days: 15
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload DRC
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: DRC
           path: drc.txt
           retention-days: 15
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload 3D Model
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: 3D Model
           path: board.vrml
           retention-days: 15
 
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload PCB PDF
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: PCB PDF
           path: board.pdf
