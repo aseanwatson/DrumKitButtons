@@ -19,7 +19,7 @@ jobs:
             submodules: 'recursive'
 
       - name: Set up KiCad
-        uses: actions-for-kicad/setup-kicad@v1.0
+        uses: aseanwatson/setup-kicad@v1.0
         with:
           version: '8.0'
 
@@ -33,7 +33,7 @@ jobs:
 
       - name: Export Schematic PDF
         run: |
-          kicad-cli sch export pdf -o schematic.pdf -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli sch export pdf -o schematic.pdf -D "REV=$(git describe --always --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_sch
 
       - name: Run DRC
         run: |
@@ -41,11 +41,11 @@ jobs:
 
       - name: Export PCB PDF
         run: |
-          kicad-cli pcb export pdf -o board.pdf -l "*" -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export pdf -o board.pdf -l "*" -D "REV=$(git describe --always --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Export VRML 3D Board
         run: |
-          kicad-cli pcb export vrml -o board.vrml -D "REV=$(git describe --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export vrml -o board.vrml -D "REV=$(git describe --always --dirty=-dirty)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
