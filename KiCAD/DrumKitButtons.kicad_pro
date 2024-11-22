@@ -600,5 +600,7 @@
       "Button Bank 1"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "REV": "(Specify -D REV=x)"
+  }
 }

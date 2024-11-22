@@ -7,6 +7,9 @@
 		(legacy_teardrops no)
 	)
 	(paper "B")
+	(title_block
+		(comment 4 "See https://github.com/aseanwatson/DrumKitButtons/tree/${REV}")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -81,6 +84,7 @@
 			(outputdirectory "")
 		)
 	)
+	(property "REV" "(Specify -D REV=x)")
 	(net 0 "")
 	(net 1 "LE_{LED}")
 	(net 2 "CLK_{SW}")

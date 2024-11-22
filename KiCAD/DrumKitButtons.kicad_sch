@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "9053e4fd-2214-4e2c-a1c2-d5a9964413b7")
 	(paper "A4")
+	(title_block
+		(comment 4 "See https://github.com/aseanwatson/DrumKitButtons/tree/${REV}")
+	)
 	(lib_symbols
 		(symbol "Conn_01x09_1"
 			(pin_names

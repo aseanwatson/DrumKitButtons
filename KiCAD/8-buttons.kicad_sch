@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "cebaab3f-5d8f-4665-b730-37b18cf68a95")
 	(paper "A4")
+	(title_block
+		(comment 4 "See https://github.com/aseanwatson/DrumKitButtons/tree/${REV}")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC165"
 			(exclude_from_sim no)
