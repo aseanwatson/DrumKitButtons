@@ -94,12 +94,12 @@ jobs:
         uses: actions/upload-artifact@v4.4.3
         with:
           name: STEP 3D Model
-          path: board-{full,only}.step
+          path: board-*.step
           retention-days: 15
 
       - name: Upload PCB PDF
         uses: actions/upload-artifact@v4.4.3
         with:
           name: PCB PDF
-          path: board-{front,back}.pdf
+          path: board-*.pdf
           retention-days: 15
