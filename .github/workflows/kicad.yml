@@ -21,7 +21,7 @@ jobs:
             fetch-depth: '0'
 
       - name: Set up KiCad
-        uses: aseanwatson/setup-kicad@v1.0
+        uses: aseanwatson/setup-kicad@v1.1
         with:
           version: '8.0'
 
