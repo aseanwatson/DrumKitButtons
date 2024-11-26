@@ -27,27 +27,33 @@ jobs:
 
       - name: Run ERC
         run: |
-          kicad-cli sch erc -o erc.txt KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli sch erc --output erc.txt KiCAD/DrumKitButtons.kicad_sch
 
       - name: Export BOM
         run: |
-          kicad-cli sch export bom -o bom.csv KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli sch export bom --output bom.csv KiCAD/DrumKitButtons.kicad_sch
 
       - name: Export Schematic PDF
         run: |
-          kicad-cli sch export pdf -o schematic.pdf -D "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_sch
+          kicad-cli sch export pdf --output schematic.pdf --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_sch
 
       - name: Run DRC
         run: |
-          kicad-cli pcb drc -o drc.txt KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb drc --output drc.txt KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Export PCB PDF
         run: |
-          kicad-cli pcb export pdf -o board.pdf -l "*" -D "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export pdf --output board-front.pdf --layers "F.Cu,F.Silkscreen,F.Mask,User.Comments,Edge.Cuts" --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export pdf --output board-back.pdf --layers "B.Cu,B.Silkscreen,B.Mask,User.Comments,Edge.Cuts" --mirror --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Export VRML 3D Board
         run: |
-          kicad-cli pcb export vrml -o board.vrml -D "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export vrml --output board.vrml --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+
+      - name: Export STEP 3D Board
+        run: |
+          kicad-cli pcb export step --output board-full.step --include-tracks --include-zones --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export step --output board-only.step --board-only --include-tracks --include-zones --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Upload ERC
         uses: actions/upload-artifact@v4.4.3
@@ -77,17 +83,23 @@ jobs:
           path: drc.txt
           retention-days: 15
 
-      - name: Upload 3D Model
+      - name: Upload VRML 3D Model
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: 3D Model
+          name: VRML 3D Model
           path: board.vrml
+          retention-days: 15
+
+      - name: Upload STEP 3D Model
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: STEP 3D Model
+          path: board-{full,only}.step
           retention-days: 15
 
       - name: Upload PCB PDF
         uses: actions/upload-artifact@v4.4.3
         with:
           name: PCB PDF
-          path: board.pdf
+          path: board-{front,back}.pdf
           retention-days: 15
-
