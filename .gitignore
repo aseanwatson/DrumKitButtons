@@ -1,7 +1,5 @@
 KiCAD/DrumKitButtons-backups/
 KiCAD/gerber_to_order/
 KiCAD/fp-info-cache
-KiCAD/fp-lib-table
-KiCAD/sym-lib-table
 *.lck
 *.bak
