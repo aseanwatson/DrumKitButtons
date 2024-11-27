@@ -3,16 +3,18 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(property "Reference" "REF**"
-		(at 0 7.62 0)
+	(property "Reference" "${REFERENCE}"
+		(at -5.842 -10.16 0)
 		(unlocked yes)
 		(layer "F.SilkS")
+		(hide yes)
 		(uuid "bb3aa9dc-ff12-4e0a-bd2c-2028acfb2e99")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.1)
 			)
+			(justify left bottom)
 		)
 	)
 	(property "Value" "PB86"
@@ -402,6 +404,19 @@
 			(justify bottom mirror)
 		)
 	)
+	(fp_text user "${REFERENCE}"
+		(at 6.175 8.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "a62596ff-d7cf-48c3-8a87-bae840a627f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(fp_text user "COM"
 		(at 3.81 -1.27 0)
 		(unlocked yes)
@@ -516,6 +531,19 @@
 				(thickness 0.1)
 			)
 			(justify bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -6.175 -8.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bb3d09b3-4c58-4efc-865d-97982a1ba3fc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 	(fp_text user "N/C"
