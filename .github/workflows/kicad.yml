@@ -43,8 +43,8 @@ jobs:
 
       - name: Export PCB PDF
         run: |
-          kicad-cli pcb export pdf --output board-front.pdf --layers "F.Cu,F.Silkscreen,F.Mask,User.Comments,Edge.Cuts" --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
-          kicad-cli pcb export pdf --output board-back.pdf --layers "B.Cu,B.Silkscreen,B.Mask,User.Comments,Edge.Cuts" --mirror --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export pdf --output board-front.pdf --layers "User.Comments,Edge.Cuts,F.Silkscreen,F.Mask,F.Cu" --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
+          kicad-cli pcb export pdf --output board-back.pdf --layers "User.Comments,Edge.Cuts,B.Silkscreen,B.Mask,B.Cu" --mirror --define-var "REV=$(git describe --always)" KiCAD/DrumKitButtons.kicad_pcb
 
       - name: Export VRML 3D Board
         run: |
