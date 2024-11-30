@@ -1458,12 +1458,6 @@
 		(uuid "026f7eca-088d-4996-b20d-a91de82e3cac")
 	)
 	(junction
-		(at 232.41 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21f29db6-34bd-4fad-8337-3b6a5811bed7")
-	)
-	(junction
 		(at 69.85 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
