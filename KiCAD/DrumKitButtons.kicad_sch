@@ -1625,7 +1625,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a97454b-3b21-4bd5-891a-1c0fd3cb643b")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 109.22 46.99 0)
 			(effects
 				(font
@@ -1699,7 +1699,7 @@
 		(instances
 			(project "DrumKitButtons"
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -1715,7 +1715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25763a3b-76a2-498a-af4c-bb906b11b8fd")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR04"
 			(at 101.6 119.38 0)
 			(effects
 				(font
@@ -1765,7 +1765,7 @@
 		(instances
 			(project "DrumKitButtons"
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "#PWR023")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -1783,7 +1783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30c52b84-88f2-4c9b-80a4-b40594c441ea")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 107.95 135.89 0)
 			(effects
 				(font
@@ -1856,7 +1856,7 @@
 		(instances
 			(project ""
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -1872,7 +1872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b7124cf-31bd-4e28-8a77-c523c1b73520")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR03"
 			(at 99.06 129.54 0)
 			(effects
 				(font
@@ -1922,7 +1922,7 @@
 		(instances
 			(project "DrumKitButtons"
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "#PWR024")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1937,7 +1937,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e3fc2db-93af-4e36-bafe-b78af9b29c9f")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR01"
 			(at 99.06 55.88 0)
 			(effects
 				(font
@@ -1987,7 +1987,7 @@
 		(instances
 			(project "DrumKitButtons"
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "#PWR021")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2003,7 +2003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a9d8aa9-b3b4-45c3-a0fb-af93d4ec9293")
-		(property "Reference" "H4"
+		(property "Reference" "H3"
 			(at 50.8 110.4899 0)
 			(effects
 				(font
@@ -2051,7 +2051,7 @@
 		(instances
 			(project ""
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "H4")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -2195,7 +2195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b11677b-afb6-4fd7-95e0-481b7cd62faf")
-		(property "Reference" "H3"
+		(property "Reference" "H4"
 			(at 50.8 105.4099 0)
 			(effects
 				(font
@@ -2243,7 +2243,7 @@
 		(instances
 			(project ""
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -2258,7 +2258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1829606-d6b5-4908-919d-e5b1c8b4a069")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR02"
 			(at 101.6 66.04 0)
 			(effects
 				(font
@@ -2308,7 +2308,7 @@
 		(instances
 			(project "DrumKitButtons"
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "#PWR022")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
