@@ -1021,24 +1021,6 @@
 		(uuid "326e84b7-d28e-4513-b057-7c7d8d9be2cd")
 	)
 	(junction
-		(at 135.89 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "858d79b5-1445-47a0-a283-13a79af6edee")
-	)
-	(junction
-		(at 139.7 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "87e8f9e3-22dc-45e4-8dbe-b396061f9fa7")
-	)
-	(junction
-		(at 135.89 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e8f7373-5cdf-4b68-ae6a-696a97e5bfe1")
-	)
-	(junction
 		(at 86.36 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1378,26 +1360,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 88.9) (xy 135.89 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4e3c373-65a6-41f1-87ca-bc27678d0632")
-	)
-	(wire
-		(pts
-			(xy 139.7 88.9) (xy 140.97 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6ca2673-2dee-453f-9e6e-60d3d4e42a40")
-	)
-	(wire
-		(pts
 			(xy 93.98 54.61) (xy 93.98 99.06)
 		)
 		(stroke
@@ -1496,36 +1458,6 @@
 		)
 		(uuid "0327d063-de5f-430c-9ffa-b971a5782e47")
 	)
-	(label "LE_{LED}"
-		(at 81.28 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "07f64732-6d64-470c-a435-1b8657b2f49b")
-	)
-	(label "~{OE_{LED}}"
-		(at 83.82 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "14e230f2-20d2-409e-b756-8af6940f9aa1")
-	)
-	(label "CLK_{SW}"
-		(at 93.98 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1c2e151e-f078-41b4-a973-6b39f948f031")
-	)
 	(label "DI_{LED}"
 		(at 88.9 58.42 270)
 		(effects
@@ -1555,76 +1487,6 @@
 			(justify left bottom)
 		)
 		(uuid "40524173-759f-4fbf-bac2-df033150d883")
-	)
-	(label "LE_{LED}"
-		(at 81.28 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ad0e0dbf-c455-46a5-bbc7-19e548cf9e92")
-	)
-	(label "~{OE_{LED}}"
-		(at 83.82 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba891b9e-d64c-43e7-9bca-b5a4e6428527")
-	)
-	(label "CLK_{LED}"
-		(at 86.36 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd78ec57-f53f-46de-b5a6-85524088b207")
-	)
-	(label "~{PL_{SW}}"
-		(at 96.52 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ce218f7c-c249-4b9f-b700-0b07f342e747")
-	)
-	(label "CLK_{LED}"
-		(at 86.36 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e3fe5a59-51a0-45ff-bc1a-8cb46cab5b3e")
-	)
-	(label "~{PL_{SW}}"
-		(at 96.52 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f6eb15cc-cc6d-4669-aa25-b508e35cb8b9")
-	)
-	(label "CLK_{SW}"
-		(at 93.98 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f960cf45-532c-4c0e-a595-3f3e2ff60efb")
 	)
 	(global_label "~{PL_{SW}}"
 		(shape input)
