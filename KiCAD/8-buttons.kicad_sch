@@ -1914,6 +1914,16 @@
 		)
 		(uuid "5887772e-d443-48a5-b7d1-107ca8fe5004")
 	)
+	(label "~{OE_{LED}}"
+		(at 58.42 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "610f5d3f-0dff-4c14-9361-b073e375320d")
+	)
 	(label "SW_{2}"
 		(at 180.34 78.74 180)
 		(effects
@@ -1964,6 +1974,16 @@
 		)
 		(uuid "79542243-f83c-4956-a122-924e6656fb12")
 	)
+	(label "LE_{LED}"
+		(at 58.42 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7cea7a7c-c83e-4318-92bd-40359e19d130")
+	)
 	(label "LED_{1}"
 		(at 151.13 83.82 180)
 		(effects
@@ -1973,6 +1993,26 @@
 			(justify right bottom)
 		)
 		(uuid "8501240b-dd96-4e97-810a-41c0655347e9")
+	)
+	(label "CLK_{SW}"
+		(at 77.47 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "86275678-e045-46f7-b7a1-667bc5756da2")
+	)
+	(label "CLK_{LED}"
+		(at 58.42 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b24182b-ea3c-4c75-9e0e-fc2783e2fb27")
 	)
 	(label "SW_{0}"
 		(at 123.19 78.74 180)
@@ -2173,6 +2213,16 @@
 			(justify right bottom)
 		)
 		(uuid "f70ed7fc-7dc8-452b-8c75-cb34824fb557")
+	)
+	(label "~{PL_{SW}}"
+		(at 76.2 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f727535d-f0ac-4a9d-b284-6f2f024d2abe")
 	)
 	(global_label "CLK_{LED}"
 		(shape input)
