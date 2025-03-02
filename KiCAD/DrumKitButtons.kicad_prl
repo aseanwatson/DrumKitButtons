@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 5,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -16,7 +16,7 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": false,
+      "dimensions": true,
       "footprints": false,
       "graphics": false,
       "keepouts": false,
@@ -33,6 +33,7 @@
       "footprint_text",
       "footprint_anchors",
       "ratsnest",
+      "grid",
       "footprints_front",
       "footprints_back",
       "footprint_values",
@@ -88,16 +89,16 @@
       9
     ],
     "col_widths": [
-      221,
-      209,
-      130,
-      90,
-      130,
-      130,
-      130,
-      95,
-      130,
-      196
+      71,
+      67,
+      42,
+      29,
+      42,
+      42,
+      42,
+      30,
+      42,
+      1512
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
@@ -108,8 +109,8 @@
     "group_by_netclass": false,
     "show_unconnected_nets": false,
     "show_zero_pad_nets": false,
-    "sort_ascending": true,
-    "sorting_column": 0
+    "sort_ascending": false,
+    "sorting_column": 3
   },
   "open_jobsets": [],
   "project": {
