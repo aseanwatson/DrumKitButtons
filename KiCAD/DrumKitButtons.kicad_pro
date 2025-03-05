@@ -63,16 +63,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -83,9 +86,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
         "padstack": "warning",
         "pth_inside_courtyard": "warning",
@@ -100,7 +105,9 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -113,6 +120,7 @@
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -125,15 +133,16 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -208,6 +217,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -402,10 +412,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -418,9 +433,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -432,7 +452,7 @@
   },
   "meta": {
     "filename": "DrumKitButtons.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -447,6 +467,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -455,9 +476,12 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "GND": "rgb(121, 19, 119)",
+      "VCC": "rgb(156, 255, 34)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -539,10 +563,23 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part#",
+          "name": "LCSC Part#",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Link",
+          "name": "LCSC Link",
+          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -577,6 +614,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -598,9 +636,217 @@
     [
       "575be80e-352b-49ee-9f93-701667605cc7",
       "Button Bank 1"
+    ],
+    [
+      "a1a1a21a-949e-4e1e-a6b4-460e91665159",
+      "Button 0"
+    ],
+    [
+      "30260b7a-b01c-4616-be87-6fe76bdf65be",
+      "Button 1"
+    ],
+    [
+      "414a906b-9f48-4d0e-a6fa-58fd68375c3a",
+      "Button 2"
+    ],
+    [
+      "8c383834-5a1d-42fc-a78a-cfe22124a865",
+      "Button 3"
+    ],
+    [
+      "717b2545-666d-41dc-800b-6b14b78bb44f",
+      "Button 4"
+    ],
+    [
+      "dba88b82-df3c-4eb3-8038-ebc15f54cd7b",
+      "Button 5"
+    ],
+    [
+      "072d4cdf-cbfc-410f-83d0-5e22c1af2c72",
+      "Button 6"
+    ],
+    [
+      "3f87dd63-872f-4418-a18b-f96542fabba1",
+      "Button 7"
+    ],
+    [
+      "a1a1a21a-949e-4e1e-a6b4-460e91665159",
+      "Button 0"
+    ],
+    [
+      "30260b7a-b01c-4616-be87-6fe76bdf65be",
+      "Button 1"
+    ],
+    [
+      "414a906b-9f48-4d0e-a6fa-58fd68375c3a",
+      "Button 2"
+    ],
+    [
+      "8c383834-5a1d-42fc-a78a-cfe22124a865",
+      "Button 3"
+    ],
+    [
+      "717b2545-666d-41dc-800b-6b14b78bb44f",
+      "Button 4"
+    ],
+    [
+      "dba88b82-df3c-4eb3-8038-ebc15f54cd7b",
+      "Button 5"
+    ],
+    [
+      "072d4cdf-cbfc-410f-83d0-5e22c1af2c72",
+      "Button 6"
+    ],
+    [
+      "3f87dd63-872f-4418-a18b-f96542fabba1",
+      "Button 7"
+    ],
+    [
+      "8e3d7c7f-97b6-485f-a62d-91a5d64f0541",
+      "Button Bank 2"
+    ],
+    [
+      "30260b7a-b01c-4616-be87-6fe76bdf65be",
+      "Button 1"
+    ],
+    [
+      "a1a1a21a-949e-4e1e-a6b4-460e91665159",
+      "Button 0"
+    ],
+    [
+      "717b2545-666d-41dc-800b-6b14b78bb44f",
+      "Button 4"
+    ],
+    [
+      "3f87dd63-872f-4418-a18b-f96542fabba1",
+      "Button 7"
+    ],
+    [
+      "8c383834-5a1d-42fc-a78a-cfe22124a865",
+      "Button 3"
+    ],
+    [
+      "072d4cdf-cbfc-410f-83d0-5e22c1af2c72",
+      "Button 6"
+    ],
+    [
+      "414a906b-9f48-4d0e-a6fa-58fd68375c3a",
+      "Button 2"
+    ],
+    [
+      "dba88b82-df3c-4eb3-8038-ebc15f54cd7b",
+      "Button 5"
+    ],
+    [
+      "750b8000-0e2b-48b2-9b84-94fc6d0905e1",
+      "Button Bank 3"
+    ],
+    [
+      "30260b7a-b01c-4616-be87-6fe76bdf65be",
+      "Button 1"
+    ],
+    [
+      "a1a1a21a-949e-4e1e-a6b4-460e91665159",
+      "Button 0"
+    ],
+    [
+      "717b2545-666d-41dc-800b-6b14b78bb44f",
+      "Button 4"
+    ],
+    [
+      "3f87dd63-872f-4418-a18b-f96542fabba1",
+      "Button 7"
+    ],
+    [
+      "8c383834-5a1d-42fc-a78a-cfe22124a865",
+      "Button 3"
+    ],
+    [
+      "072d4cdf-cbfc-410f-83d0-5e22c1af2c72",
+      "Button 6"
+    ],
+    [
+      "414a906b-9f48-4d0e-a6fa-58fd68375c3a",
+      "Button 2"
+    ],
+    [
+      "dba88b82-df3c-4eb3-8038-ebc15f54cd7b",
+      "Button 5"
+    ],
+    [
+      "26123988-4436-470f-8df2-915b04ee2818",
+      "Button Bank 4"
+    ],
+    [
+      "30260b7a-b01c-4616-be87-6fe76bdf65be",
+      "Button 1"
+    ],
+    [
+      "a1a1a21a-949e-4e1e-a6b4-460e91665159",
+      "Button 0"
+    ],
+    [
+      "717b2545-666d-41dc-800b-6b14b78bb44f",
+      "Button 4"
+    ],
+    [
+      "3f87dd63-872f-4418-a18b-f96542fabba1",
+      "Button 7"
+    ],
+    [
+      "8c383834-5a1d-42fc-a78a-cfe22124a865",
+      "Button 3"
+    ],
+    [
+      "072d4cdf-cbfc-410f-83d0-5e22c1af2c72",
+      "Button 6"
+    ],
+    [
+      "414a906b-9f48-4d0e-a6fa-58fd68375c3a",
+      "Button 2"
+    ],
+    [
+      "dba88b82-df3c-4eb3-8038-ebc15f54cd7b",
+      "Button 5"
+    ],
+    [
+      "903f5d09-4594-4373-9fb5-e09f9cdba84a",
+      "Button Bank 5"
+    ],
+    [
+      "30260b7a-b01c-4616-be87-6fe76bdf65be",
+      "Button 1"
+    ],
+    [
+      "a1a1a21a-949e-4e1e-a6b4-460e91665159",
+      "Button 0"
+    ],
+    [
+      "717b2545-666d-41dc-800b-6b14b78bb44f",
+      "Button 4"
+    ],
+    [
+      "3f87dd63-872f-4418-a18b-f96542fabba1",
+      "Button 7"
+    ],
+    [
+      "8c383834-5a1d-42fc-a78a-cfe22124a865",
+      "Button 3"
+    ],
+    [
+      "072d4cdf-cbfc-410f-83d0-5e22c1af2c72",
+      "Button 6"
+    ],
+    [
+      "414a906b-9f48-4d0e-a6fa-58fd68375c3a",
+      "Button 2"
+    ],
+    [
+      "dba88b82-df3c-4eb3-8038-ebc15f54cd7b",
+      "Button 5"
     ]
   ],
   "text_variables": {
-    "REV": "(Specify -D REV=x)"
+    "REV": "ee6951"
   }
 }
