@@ -2397,7 +2397,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TLC5916"
+		(property "Value" "TLC5917QDRQ1"
 			(at 72.0441 116.84 0)
 			(effects
 				(font
@@ -2433,7 +2433,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Link" "https://www.lcsc.com/product-detail/LED-Drivers_Texas-Instruments-TLC5916ID_C1554191.html?s_z=n_%20TLC5916"
+		(property "LCSC Link" "https://www.lcsc.com/product-detail/LED-Drivers_Texas-Instruments-TLC5917QDRQ1_C2870661.html?s_z=n_TLC5917"
 			(at 69.85 132.08 0)
 			(effects
 				(font
@@ -2442,7 +2442,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part#" "C1554191"
+		(property "LCSC Part#" "C2870661"
 			(at 69.85 132.08 0)
 			(effects
 				(font
