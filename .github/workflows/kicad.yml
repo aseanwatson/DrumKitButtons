@@ -23,7 +23,7 @@ jobs:
       - name: Set up KiCad
         uses: aseanwatson/setup-kicad@v1.1
         with:
-          version: '8.0'
+          version: '9.0'
 
       - name: Run ERC
         run: |
