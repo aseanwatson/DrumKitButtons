@@ -1458,36 +1458,6 @@
 		)
 		(uuid "0327d063-de5f-430c-9ffa-b971a5782e47")
 	)
-	(label "LE_{LED}"
-		(at 81.28 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "07f64732-6d64-470c-a435-1b8657b2f49b")
-	)
-	(label "~{OE_{LED}}"
-		(at 83.82 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "14e230f2-20d2-409e-b756-8af6940f9aa1")
-	)
-	(label "CLK_{SW}"
-		(at 93.98 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1c2e151e-f078-41b4-a973-6b39f948f031")
-	)
 	(label "DI_{LED}"
 		(at 88.9 58.42 270)
 		(effects
@@ -1517,76 +1487,6 @@
 			(justify left bottom)
 		)
 		(uuid "40524173-759f-4fbf-bac2-df033150d883")
-	)
-	(label "LE_{LED}"
-		(at 81.28 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ad0e0dbf-c455-46a5-bbc7-19e548cf9e92")
-	)
-	(label "~{OE_{LED}}"
-		(at 83.82 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba891b9e-d64c-43e7-9bca-b5a4e6428527")
-	)
-	(label "CLK_{LED}"
-		(at 86.36 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd78ec57-f53f-46de-b5a6-85524088b207")
-	)
-	(label "~{PL_{SW}}"
-		(at 96.52 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ce218f7c-c249-4b9f-b700-0b07f342e747")
-	)
-	(label "CLK_{LED}"
-		(at 86.36 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e3fe5a59-51a0-45ff-bc1a-8cb46cab5b3e")
-	)
-	(label "~{PL_{SW}}"
-		(at 96.52 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f6eb15cc-cc6d-4669-aa25-b508e35cb8b9")
-	)
-	(label "CLK_{SW}"
-		(at 93.98 128.27 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f960cf45-532c-4c0e-a595-3f3e2ff60efb")
 	)
 	(global_label "~{PL_{SW}}"
 		(shape input)
@@ -1871,6 +1771,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 39.37 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2eea5bc8-7e0f-4002-858f-652a6040e4eb")
+		(property "Reference" "H6"
+			(at 41.91 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 41.91 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Link" ""
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part#" ""
+			(at 39.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "DrumKitButtons"
+				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 39.37 41.91 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30135c03-d3bc-4924-b88a-b7212d952eeb")
+		(property "Reference" "H5"
+			(at 41.91 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 41.91 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Link" ""
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part#" ""
+			(at 39.37 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "DrumKitButtons"
+				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "Conn_01x09_1")
 		(lib_id "Connector_Generic:Conn_01x09")
 		(at 91.44 135.89 90)
@@ -2110,16 +2170,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 39.37 36.83 0)
+		(at 39.37 52.07 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7a9d8aa9-b3b4-45c3-a0fb-af93d4ec9293")
-		(property "Reference" "H4"
-			(at 41.91 35.5599 0)
+		(uuid "4a8fc380-80f9-47d2-96f7-1a6c5f527001")
+		(property "Reference" "H7"
+			(at 41.91 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2128,7 +2188,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 41.91 38.0999 0)
+			(at 41.91 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2137,7 +2197,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 39.37 36.83 0)
+			(at 39.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,7 +2206,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 36.83 0)
+			(at 39.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2155,7 +2215,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 39.37 36.83 0)
+			(at 39.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,7 +2224,7 @@
 			)
 		)
 		(property "LCSC Link" ""
-			(at 39.37 36.83 0)
+			(at 39.37 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2172,7 +2232,87 @@
 			)
 		)
 		(property "LCSC Part#" ""
-			(at 39.37 36.83 0)
+			(at 39.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "DrumKitButtons"
+				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 39.37 62.23 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a9d8aa9-b3b4-45c3-a0fb-af93d4ec9293")
+		(property "Reference" "H9"
+			(at 41.91 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 41.91 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 39.37 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 39.37 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Link" ""
+			(at 39.37 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part#" ""
+			(at 39.37 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2182,7 +2322,7 @@
 		(instances
 			(project ""
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "H4")
+					(reference "H9")
 					(unit 1)
 				)
 			)
@@ -2350,7 +2490,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 39.37 31.75 0)
+		(at 39.37 57.15 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -2358,8 +2498,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b11677b-afb6-4fd7-95e0-481b7cd62faf")
-		(property "Reference" "H3"
-			(at 41.91 30.4799 0)
+		(property "Reference" "H8"
+			(at 41.91 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2368,7 +2508,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 41.91 33.0199 0)
+			(at 41.91 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2377,7 +2517,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 39.37 31.75 0)
+			(at 39.37 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2386,7 +2526,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 31.75 0)
+			(at 39.37 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2395,7 +2535,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 39.37 31.75 0)
+			(at 39.37 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,7 +2544,7 @@
 			)
 		)
 		(property "LCSC Link" ""
-			(at 39.37 31.75 0)
+			(at 39.37 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2412,7 +2552,7 @@
 			)
 		)
 		(property "LCSC Part#" ""
-			(at 39.37 31.75 0)
+			(at 39.37 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2562,7 @@
 		(instances
 			(project ""
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
-					(reference "H3")
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -2488,6 +2628,166 @@
 			(project "DrumKitButtons"
 				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 39.37 36.83 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fba2b2b8-15c4-43f1-824e-3b5ad2c36137")
+		(property "Reference" "H4"
+			(at 41.91 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 41.91 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Link" ""
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part#" ""
+			(at 39.37 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "DrumKitButtons"
+				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 39.37 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fff79d0c-f736-4f9b-84e3-ce52183ce9f1")
+		(property "Reference" "H3"
+			(at 41.91 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 41.91 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Link" ""
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part#" ""
+			(at 39.37 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "DrumKitButtons"
+				(path "/9053e4fd-2214-4e2c-a1c2-d5a9964413b7"
+					(reference "H3")
 					(unit 1)
 				)
 			)
